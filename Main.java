@@ -31,16 +31,16 @@ public class Main {
         System.out.println(aBitBiggerNum);
         
         
-        // packages
+        // Date Package
         Date now = new Date();
         long timeRightNow = now.getTime();
         System.out.println(timeRightNow);
-        System.out.println(now.toString().substring(0,3));
+        System.out.println(now.getMonth() + 1);
         
         
         //JAVA METHODS
         // 1. Cut string using substring()
-        String cutStringTest = "This is a TEST";
+        String cutStringTest = "This is a TEST"; //print TEST
         System.out.println(cutStringTest.substring(10, 14)); // or just 10
     }
     
