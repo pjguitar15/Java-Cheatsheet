@@ -35,6 +35,13 @@ public class Main {
         Date now = new Date();
         long timeRightNow = now.getTime();
         System.out.println(timeRightNow);
+        System.out.println(now.toString().substring(0,3));
+        
+        
+        //JAVA METHODS
+        // 1. Cut string using substring()
+        String cutStringTest = "This is a TEST";
+        System.out.println(cutStringTest.substring(10, 14)); // or just 10
     }
     
 }
