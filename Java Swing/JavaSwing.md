@@ -1,3 +1,21 @@
+## actionPerformed Method Example
+
+```java
+    myButton.addActionListener(this);
+    myButton2.addActionListener(this);
+    
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        if (e.getSource() == myButton) {
+            count += 5;
+            System.out.println(count);
+        } else if (e.getSource() == myButton2) {
+            count += 10;
+            System.out.println(count);
+        }
+    }      
+```
+
 ## Resize Image
 
 ```java
