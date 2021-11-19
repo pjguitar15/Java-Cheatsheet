@@ -56,6 +56,26 @@ if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
 this.setResizable(false);
 ```
 
+## Change Panel Background Color
+
+```java
+JPanel.setBackground(Color.decode("#1abc9c"));
+```
+
+## Positioning using setBounds and setLayout
+
+```java
+JFrame.setLayout(null);
+// x, y, width, height
+JPanel.setBounds(0, 120, 500, 400);
+```
+
+## Font on JLabel
+```java
+JLabel.setFont(new Font("Open Sans", Font.BOLD, 30));
+JLabel.setForeground(Color.white);
+```
+
 ## JOptionPane
 
 ```java
