@@ -1,3 +1,4 @@
+// output: https://imgur.com/a/ZSOYwoO
 package practice;
 
 import java.awt.BorderLayout;
