@@ -16,6 +16,12 @@
     }      
 ```
 
+## Adjust the frame when new components are added
+
+```java
+    this.pack();   
+```
+
 ## Resize Image
 
 ```java
