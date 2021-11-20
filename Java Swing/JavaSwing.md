@@ -16,6 +16,7 @@
     public void focusLost(FocusEvent e) {
       displayMessage("Focus lost", e);
     }  
+    }
 ```
 
 ## actionPerformed Method Example
