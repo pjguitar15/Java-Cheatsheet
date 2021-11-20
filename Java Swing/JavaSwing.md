@@ -4,6 +4,20 @@
     JPanel.setBorder(new EmptyBorder(10, 10, 10, 10));    
 ```
 
+## Focus Listner
+
+```java
+    JTextField textField = new JTextField("A TextField");
+    textField.addFocusListener(new FocusListener() {
+    public void focusGained(FocusEvent e) {
+      displayMessage("Focus gained", e);
+    }
+
+    public void focusLost(FocusEvent e) {
+      displayMessage("Focus lost", e);
+    }  
+```
+
 ## actionPerformed Method Example
 
 ```java
