@@ -7,6 +7,8 @@
 ## Focus Listener
 
 ```java
+import java.awt.event.*;
+
     JTextField textField = new JTextField("A TextField");
     textField.addFocusListener(new FocusListener() {
     public void focusGained(FocusEvent e) {
