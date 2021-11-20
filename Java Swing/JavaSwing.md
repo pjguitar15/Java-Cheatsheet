@@ -1,3 +1,9 @@
+## JPanel Padding
+
+```java
+    JPanel.setBorder(new EmptyBorder(10, 10, 10, 10));    
+```
+
 ## actionPerformed Method Example
 
 ```java
