@@ -4,6 +4,18 @@
     JPanel.setBorder(new EmptyBorder(10, 10, 10, 10));    
 ```
 
+## Java Action Listener
+
+```java
+    import java.awt.event.*;
+    submit.addActionListener(new ActionListener() {
+      @Override
+      public void actionPerformed(ActionEvent e) {
+        System.out.println("Hello World");
+      }
+    });
+```
+
 ## Focus Listener
 
 ```java
