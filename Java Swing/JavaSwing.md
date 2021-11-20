@@ -4,7 +4,7 @@
     JPanel.setBorder(new EmptyBorder(10, 10, 10, 10));    
 ```
 
-## Focus Listner
+## Focus Listener
 
 ```java
     JTextField textField = new JTextField("A TextField");
