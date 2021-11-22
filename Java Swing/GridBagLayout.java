@@ -1,3 +1,7 @@
+import java.awt.GridBagLayout;
+import java.awt.Insets;
+import java.awt.GridBagConstraints;
+
 // gridbag
     this.setLayout(new GridBagLayout());
     GridBagConstraints gcon = new GridBagConstraints();
