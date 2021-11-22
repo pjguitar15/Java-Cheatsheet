@@ -135,6 +135,22 @@ JLabel.setFont(new Font("Open Sans", Font.BOLD, 30));
 JLabel.setForeground(Color.white);
 ```
 
+## JDateChooser
+
+```java
+    // first step: install library https://toedter.com/jcalendar/
+    JDateChooser dateChooser = new JDateChooser();
+    dateChooser.getDate();
+```
+
+## JCalendar
+
+```java
+    // first step: install library https://github.com/DJ-Raven/date-chooser
+    JCalendar jc = new JCalendar();
+    jc.getDate();
+```
+
 ## JOptionPane
 
 ```java
