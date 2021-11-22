@@ -1,7 +1,7 @@
 ## JPanel Padding
 
 ```java
-    JPanel.setBorder(new EmptyBorder(10, 10, 10, 10));    
+    JPanel.setBorder(new EmptyBorder(10, 10, 10, 10)); // top, left, button, right   
 ```
 
 ## Java Action Listener
