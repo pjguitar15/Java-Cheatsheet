@@ -98,6 +98,7 @@ userField.setBorder(BorderFactory.createCompoundBorder(
 
 ```java
 loginButton.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR)); // loginButton is variable
+JTextField.setCursor(new Cursor(Cursor.TEXT_CURSOR)); // this works too
 ```
 
 ## Submit on Key Press
