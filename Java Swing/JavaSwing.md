@@ -160,4 +160,6 @@ JOptionPane.showMessageDialog(null, "Error! This dialog shows error message", "E
 JOptionPane.showMessageDialog(null, "Hello! This is an information message", "Enter title", JOptionPane.INFORMATION_MESSAGE);
 JOptionPane.showMessageDialog(null, "Question?", "Enter title", JOptionPane.QUESTION_MESSAGE);
 JOptionPane.showMessageDialog(null, "This is a plain message without an icon", "Enter title", JOptionPane.PLAIN_MESSAGE);
+
+JOptionPane.showInputDialog("Anyone there?");
 ```
