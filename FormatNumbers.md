@@ -15,6 +15,7 @@
 ```
 
 ## DecimalFormat
+> allows custom formatting
 ```java
     import java.text.DecimalFormat;
     DecimalFormat decimalFormat = new DecimalFormat("P###,###.00");
