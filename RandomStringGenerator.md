@@ -1,5 +1,5 @@
 ## Generate Random String
-> NumberFormat is abstract. It cannot be instantiated. Here's how you do it.
+> This method basically generates a random index from 0 to the SALTCHARS length
 ```java
     public static String generateSalt() {
         String SALTCHARS = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
