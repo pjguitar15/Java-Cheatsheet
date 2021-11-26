@@ -13,3 +13,10 @@
     NumberFormat percent = NumberFormat.getPercentInstance();
     String result = percent.format(0.1); // returns 10%
 ```
+
+## DecimalFormat
+```java
+    import java.text.DecimalFormat;
+    DecimalFormat decimalFormat = new DecimalFormat("P###,###.00");
+    System.out.println(decimalFormat.format(1000000)); // prints P1,000,000.00
+```
