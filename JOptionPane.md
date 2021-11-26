@@ -1,4 +1,4 @@
-## JOptionPane
+## Show Message Dialog
 ```java
 JOptionPane.showMessageDialog(null, "Warning! This dialog will be an alert", "Enter title", JOptionPane.WARNING_MESSAGE);
 JOptionPane.showMessageDialog(null, "Error! This dialog shows error message", "Enter title", JOptionPane.ERROR_MESSAGE);
@@ -10,4 +10,15 @@ JOptionPane.showInputDialog("Anyone there?");
 int input = JOptionPane.showConfirmDialog(null, "Do you like bacon?");
 // 0=yes, 1=no, 2=cancel
 System.out.println(input);
+```
+
+## Input Dialog
+```java
+JOptionPane.showInputDialog("Anyone there?");
+```
+
+## Confirm Dialog
+> 0 = yes, 1 = no, 2 = cancel
+```java
+int input = JOptionPane.showConfirmDialog(null, "Do you like bacon?");
 ```
