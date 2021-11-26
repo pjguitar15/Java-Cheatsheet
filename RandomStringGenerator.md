@@ -5,7 +5,7 @@
         String SALTCHARS = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
         String salt = "";
         while (salt.length() < 10) { // length of the random string.
-            int index = (int) (Math.Random() * SALTCHARS.length()); // generates random number up to String length
+            int index = (int) (Math.random() * SALTCHARS.length()); // generates random number up to String length
             salt += SALTCHARS.charAt(index); // append the taken char to salt string
         }        
         return salt;
