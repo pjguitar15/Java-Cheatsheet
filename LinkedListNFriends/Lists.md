@@ -1,3 +1,12 @@
+## Add All
+> useful for removing duplicates
+```java
+        ArrayList<String> listOne = new ArrayList<>(Arrays.asList("a", "b", "c", "d", "f"));         
+        ArrayList<String> listTwo = new ArrayList<>(Arrays.asList("a", "b", "c", "d", "e"));         
+        listOne.addAll(listTwo);    //Merge both lists         
+        System.out.println(listOne);
+```
+
 ## LinkedList
 > add, addAll, clear, getFirst, getLast, get, set, Iterator, Collections
 ```java
