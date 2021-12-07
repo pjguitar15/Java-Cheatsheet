@@ -13,3 +13,29 @@
     }
 ```
 
+## Custom Exceptions    
+```java
+    // custom empty string exception
+class EmptyStringException extends Exception {
+    public EmptyStringException(String str) {
+        super(str);
+    }
+}
+
+class Main {
+    public static void main(String[] args) {
+        try {
+            checkIfEmptyString("");
+        } catch(EmptyStringException e) {
+            System.out.println(e.getMessage());
+        }
+    }
+    
+    // throw Empty String Exception
+    public static void checkIfEmptyString(String str) throws EmptyStringException {
+        if (str.isEmpty()) {
+            throw new EmptyStringException("Error! String is empty!");
+        }
+    }
+}
+```
