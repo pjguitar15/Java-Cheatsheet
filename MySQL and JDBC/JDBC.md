@@ -47,7 +47,7 @@ try {
 }
 ```
 
-## Insert Value Variation 1
+## Write
 > variation 1
 ```java 
   Connection con = ConnectionProvider.getCon();  
@@ -56,7 +56,7 @@ try {
   st.executeUpdate("INSERT INTO studentTBL (id, name) VALUES('"+studentID+"', '"+name+"')");  
 ```
 
-## Insert Value Variation 2
+## Write
 > variation 2
 ```java 
   Connection con = ConnectionProvider.getCon();  
@@ -64,7 +64,7 @@ try {
   ps.executeUpdate();
 ```
 
-## Insert Value Variation 3
+## Write
 > variation 3
 ```java 
   Connection con = ConnectionProvider.getCon();  
