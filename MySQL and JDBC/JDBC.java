@@ -16,7 +16,7 @@ import java.sql.*; // don't forget this
 // without static gives error
 public static Connection getCon(){
   try {    
-    Class.forName("com.mysql.jdbc.Driver"); // JDBC driver class found in properties
+    Class.forName("com.mysql.cj.jdbc.Driver"); // JDBC driver class found in properties
     // create connection
     Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/dbName", "root", "password"); // insert localhost url    
     return con;
