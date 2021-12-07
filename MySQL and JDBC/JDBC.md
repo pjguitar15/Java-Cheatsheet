@@ -15,3 +15,32 @@ import java.sql.DriverManager;
     }
   }
 ```
+
+## Read
+> takes values from DB
+```java
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import Connection.ConnectionProvider; // this is the class we created
+
+String query1 = "SELECT * FROM users";
+Connection conn = ConnectionProvider.getCon();
+try {
+    assert conn != null;
+    Statement st = conn.createStatement();
+    // store results to Result set
+    ResultSet rs = st.executeQuery(query1);
+
+    // loop through query result by row
+    while (rs.next()) { // rs.next() returns boolean value
+        System.out.println(rs.getString("name"));
+        System.out.println(rs.getString("username"));
+        System.out.println(rs.getString("password"));
+        System.out.println("-------------------------------");
+    }
+} catch (SQLException ex) {
+    System.out.println(ex.getMessage());
+}
+```
