@@ -151,3 +151,22 @@ JLabel.setForeground(Color.white);
     JCalendar jc = new JCalendar();
     jc.getDate();
 ```
+
+## JTable and JScrollPane
+> only display table if layout is not null
+```java
+    String[][] data = {
+            {"Kundan Kumar Jha", "4031", "CSE", "asd"},
+            {"Anand Jha", "6014", "IT", "asd"}
+    };
+    // Column Names
+    String[] columnNames = {"Name", "Roll Number", "Department", "Password"};
+    // Initializing the JTable
+    table = new JTable(data, columnNames);
+    table.setPreferredScrollableViewportSize(new Dimension(500, 40));
+    table.setFillsViewportHeight(true);
+
+    JScrollPane scrollPane = new JScrollPane(table);
+
+    frame.add(scrollPane);
+```
