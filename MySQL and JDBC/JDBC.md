@@ -64,8 +64,8 @@ try {
   ps.executeUpdate();
 ```
 
-## Insert Value Variation 2
-> variation 2
+## Insert Value Variation 3
+> variation 3
 ```java 
   Connection con = ConnectionProvider.getCon();  
   PreparedStatement ps = con.prepareStatement("INSERT INTO studentTBL (id, name) VALUES(?, ?)");
