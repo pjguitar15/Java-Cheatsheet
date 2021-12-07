@@ -48,12 +48,28 @@ try {
 ```
 
 ## Insert Value Variation 1
-> takes values from DB
-```java
-  // initialize connection object
-  Connection con = ConnectionProvider.getCon();
-  // Statement allows writing SQL Queries
+> variation 1
+```java 
+  Connection con = ConnectionProvider.getCon();  
   Statement st = con.createStatement();
   // "+studentID+" this is like a String Template Literal in Javascript
   st.executeUpdate("INSERT INTO studentTBL (id, name) VALUES('"+studentID+"', '"+name+"')");  
+```
+
+## Insert Value Variation 2
+> variation 2
+```java 
+  Connection con = ConnectionProvider.getCon();  
+  PreparedStatement ps = con.prepareStatement("INSERT INTO studentTBL (id, name) VALUES('"+studentID+"', '"+name+"')");
+  ps.executeUpdate();
+```
+
+## Insert Value Variation 2
+> variation 2
+```java 
+  Connection con = ConnectionProvider.getCon();  
+  PreparedStatement ps = con.prepareStatement("INSERT INTO studentTBL (id, name) VALUES(?, ?)");
+  ps.setString(1, studentID);                                          
+  ps.setString(2, name); 
+  ps.executeUpdate();
 ```
