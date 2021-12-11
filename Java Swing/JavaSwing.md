@@ -91,7 +91,7 @@ getContentPane().requestFocusInWindow();
 ```java
 userField.setBorder(BorderFactory.createCompoundBorder(
         userField.getBorder(),
-        BorderFactory.createEmptyBorder(5, 10, 5, 5))); // Top, Left, Bottom, Right
+        BorderFactory.createEmptyBorder(5, 7, 5, 5))); // Top, Left, Bottom, Right
 ```
 
 ## Change cursor on Button Mouse Hover
