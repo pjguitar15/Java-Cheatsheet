@@ -2,6 +2,12 @@
 * It is a newer version of Java IO (File)
 * NIO stands for Non-blocking IO
 
+## Path instance
+> right click file, then click copy path, to get path
+```java
+  Path path = Paths.get("E:\\IntelliJ Projects\\Random\\src\\test.txt");
+```
+
 ## Print File Texts
 > using a for in loop
 ```java
@@ -78,11 +84,7 @@ import java.nio.file.Files; // required
   import java.nio.file.Paths; 
 ```
 
-## Path instance
-> right click file, then click copy path, to get path
-```java
-  Path path = Paths.get("E:\\IntelliJ Projects\\Random\\src\\test.txt");
-```
+
 
 ## Get File Name
 > returns test.txt
