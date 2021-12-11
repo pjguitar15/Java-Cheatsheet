@@ -219,3 +219,13 @@ JLabel.setForeground(Color.white);
             }
         });
 ```
+
+## Rounded Textfield
+> Overrides a class https://github.com/pjguitar15/Java-Cheatsheet/blob/main/Java%20Swing/RoundedCornerBorder.java
+```java
+    textField = new JTextField("Enter your username");
+    textField.setPreferredSize(new Dimension(250, 32));
+    textField.setBorder(new RoundedCornerBorder());
+    textField.setForeground(Color.decode("#6C757D"));
+    textField.setFont(new Font("Open Sans", Font.PLAIN, 13));
+```
