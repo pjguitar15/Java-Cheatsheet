@@ -57,6 +57,20 @@ import java.nio.file.Files; // required
   }
 ```
 
+## Create Directory
+> need to indicate a path 
+```java
+  Path path = Paths.get("E:\\IntelliJ Projects\\Random\\New Folder");
+  Path p = Files.createDirectory(path);
+```
+
+## Create File
+> need to indicate a path 
+```java
+  Path path = Paths.get("E:\\IntelliJ Projects\\Random\\src\\data.txt");
+  Path p = Files.createFile(path);
+```
+
 ## Import Statement
 > needs these two to work
 ```java
