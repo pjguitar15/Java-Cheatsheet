@@ -196,6 +196,7 @@ JLabel.setForeground(Color.white);
 * Info: #17A2B8, #138496
 * Light: #F8F9FA, #E2E6EA
 * Dark: #343A40(text-light), #23272B(text-light)
+* Dark Text: #212529
 ```java        
         JButton primary = new JButton("Primary");
         primary.setPreferredSize(new Dimension(100, 28));
