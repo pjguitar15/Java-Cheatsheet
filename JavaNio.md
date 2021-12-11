@@ -45,6 +45,18 @@ import java.nio.file.Files; // required
   }
 ```
 
+## Copy file
+> creates a new file with different name with the same content as the other one
+```java
+  Path path = Paths.get("E:\\IntelliJ Projects\\Random\\src\\test.txt");
+  Path destinationPath=Paths.get("E:\\IntelliJ Projects\\Random\\src\\test2.txt");
+  try {
+    Files.copy(path, destinationPath);
+  } catch (IOException e) {
+    e.printStackTrace();
+  }
+```
+
 ## Import Statement
 > needs these two to work
 ```java
