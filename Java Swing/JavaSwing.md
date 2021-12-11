@@ -60,10 +60,13 @@ import java.awt.event.*;
 ## Resize Image
 
 ```java
-ImageIcon ii = new ImageIcon(getClass().getResource("/Image/test.JPG")); // get img url
-Image image = ii.getImage().getScaledInstance(jLabel.getWidth(), jLabel.getHeight(), Image.SCALE_SMOOTH); // get width and height
-ii = new ImageIcon(image); // reassign image
-jLabel.setIcon(ii); // set to jLabel
+    JLabel imageLabel = new JLabel();
+    ImageIcon ii = new ImageIcon(getClass().getResource("images/login2.jpg")); // get img url
+    Image img = ii.getImage();
+    imageLabel.setSize(400, 500);
+    Image imgScale = img.getScaledInstance(imageLabel.getWidth(), imageLabel.getHeight(), Image.SCALE_SMOOTH);
+    ImageIcon scaledIcon = new ImageIcon(imgScale);
+    imageLabel.setIcon(scaledIcon);
 ```
 
 ## TextField Placeholder Effect
