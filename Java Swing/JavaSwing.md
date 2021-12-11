@@ -188,6 +188,8 @@ JLabel.setForeground(Color.white);
 ```
 
 ## Bootstrap Buttons
+* Primary - #007BFF, #0069D9
+* Primary - #007BFF, #0069D9
 ```java        
         JButton primary = new JButton("Primary");
         primary.setPreferredSize(new Dimension(100, 28));
