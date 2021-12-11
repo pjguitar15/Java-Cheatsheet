@@ -114,3 +114,21 @@ import java.nio.file.Files; // required
   String content="Hey Coding Owls!!";
   Files.write(path, content.getBytes());
 ```
+
+## Writing multiple lines
+> overwrites the whole file content
+```java
+  List contentInList=new ArrayList<>();
+  contentInList.add("Twinkle, twinkle, little star");
+  contentInList.add("How I wonder what you are");
+  contentInList.add("Up above the world so high");
+  contentInList.add("Like a diamond in the sky");
+  contentInList.add("Twinkle, twinkle little star");
+  contentInList.add("How I wonder what you are");
+  
+  try {
+    Files.write(path, contentInList);
+  } catch (IOException e) {
+    e.printStackTrace();
+  }
+```
