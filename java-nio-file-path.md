@@ -85,3 +85,20 @@
 ```java
   test.hashCode()
 ```
+
+## Print File Texts
+> using a for in loop
+```java
+import java.nio.file.Files;
+import java.util.List;
+
+Path test = Paths.get("E:\\IntelliJ Projects\\Random\\src\\test.txt");
+  try {
+      List data = Files.readAllLines(test);
+      for (Object line : data) {
+          System.out.println(line);
+      }
+  } catch (IOException e) {
+      e.printStackTrace();
+  }
+```
