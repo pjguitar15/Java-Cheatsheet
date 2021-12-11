@@ -2,6 +2,13 @@
 * It is a newer version of Java IO (File)
 * NIO stands for Non-blocking IO
 
+## Import Statement
+> needs these two to work
+```java
+  import java.nio.file.Path;
+  import java.nio.file.Paths; 
+```
+
 ## Path instance
 > right click file, then click copy path, to get path
 ```java
@@ -76,15 +83,6 @@ import java.nio.file.Files; // required
   Path path = Paths.get("E:\\IntelliJ Projects\\Random\\src\\data.txt");
   Path p = Files.createFile(path);
 ```
-
-## Import Statement
-> needs these two to work
-```java
-  import java.nio.file.Path;
-  import java.nio.file.Paths; 
-```
-
-
 
 ## Get File Name
 > returns test.txt
