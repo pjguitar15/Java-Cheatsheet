@@ -229,3 +229,13 @@ JLabel.setForeground(Color.white);
     textField.setForeground(Color.decode("#6C757D"));
     textField.setFont(new Font("Open Sans", Font.PLAIN, 13));
 ```
+
+## Bootstrap Textfield
+> Bootstrap default border color is #CED4DA but it's a bit too light
+```java
+    JTextField textField = new JTextField("Enter your username");
+    textField.setPreferredSize(new Dimension(250, 32));
+    usernameField.setBorder(BorderFactory.createLineBorder(Color.GRAY, 1));
+    textField.setForeground(Color.decode("#6C757D"));
+    textField.setFont(new Font("Open Sans", Font.PLAIN, 13));
+```
