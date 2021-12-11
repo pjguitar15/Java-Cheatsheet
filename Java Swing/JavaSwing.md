@@ -186,3 +186,28 @@ JLabel.setForeground(Color.white);
     }
     });
 ```
+
+## Bootstrap Buttons
+```java        
+        JButton primary = new JButton("Primary");
+        primary.setPreferredSize(new Dimension(100, 28));
+        primary.setCursor(new Cursor(Cursor.HAND_CURSOR));
+        primary.setFont(new Font("Helvetica Neue", Font.BOLD, 12));
+        primary.setBackground(Color.decode("#007BFF"));
+        primary.setForeground(Color.WHITE);
+        primary.setBorder(null);
+        primary.setFocusPainted(false);
+        primary.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseEntered(MouseEvent e) {
+                super.mouseEntered(e);
+                primary.setBackground(Color.decode("#0069D9"));
+            }
+
+            @Override
+            public void mouseExited(MouseEvent e) {
+                super.mouseExited(e);
+                primary.setBackground(Color.decode("#007BFF"));
+            }
+        });
+```
