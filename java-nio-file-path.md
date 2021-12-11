@@ -36,7 +36,7 @@
 ## Get Name Count
 > return directory level count
 ```java
-  System.out.println(test.getNameCount()); 
+  test.getNameCount(); 
 ```
 
 ## Get Parent
