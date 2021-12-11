@@ -1,3 +1,7 @@
+## Java NIO
+> It is a newer version of Java IO (File)
+> NIO stands for Non-blocking IO
+
 ## Import Statement
 > needs these two to work
 ```java
@@ -8,73 +12,73 @@
 ## Path instance
 > right click file, then click copy path, to get path
 ```java
-  Path test = Paths.get("E:\\IntelliJ Projects\\Random\\src\\test.txt");
+  Path path = Paths.get("E:\\IntelliJ Projects\\Random\\src\\test.txt");
 ```
 
 ## Get File Name
 > returns test.txt
 ```java
-  test.getFileName();
+  path.getFileName();
 ```
 
 ## Get File System
 > returns sun.nio.fs.WindowsFileSystem@1b28cdfa
 ```java
-  test.getFileSystem()
+  path.getFileSystem()
 ```
 
 ## Get Name
 > returns directory names per level
 ```java
-  test.getName(0); // returns parent directory name
-  test.getName(1); // returns child directory
-  test.getName(2); // returns grandchild directory
-  test.getName(3); // returns great-grandchild directory
-  test.getName(4); // returns IllegalArgumentException
+  path.getName(0); // returns parent directory name
+  path.getName(1); // returns child directory
+  path.getName(2); // returns grandchild directory
+  path.getName(3); // returns great-grandchild directory
+  path.getName(4); // returns IllegalArgumentException
 ```
 
 ## Get Name Count
 > return directory level count
 ```java
-  test.getNameCount(); 
+  path.getNameCount(); 
 ```
 
 ## Get Parent
 > returns parent directories - E:\IntelliJ Projects\Random\src
 ```java
-  test.getParent()
+  path.getParent()
 ```
 
 ## Get Root
 > returns Disk letter - E:\
 ```java
-  test.getRoot()
+  path.getRoot()
 ```
 
 ## Get Class
 > returns class sun.nio.fs.WindowsPath
 ```java
-  test.getClass()
+  path.getClass()
 ```
 
 ## To Absolute Path and To File
 > returns the absolute path. both returns the same thing. 
 ```java
-  test.toAbsolutePath()
-  test.toFile()
+  path.toAbsolutePath()
+  path.toFile()
 ```
 
 ## To URI
 > returns a link (clickable): file:///E:/IntelliJ%20Projects/Random/src/test.txt
 ```java
-  test.toUri()
+  path.toUri()
 ```
 
 ## To Real Path
 > returns a link (clickable): file:///E:/IntelliJ%20Projects/Random/src/test.txt
 ```java
   try {
-      System.out.println(test.toRealPath());
+      System.out.println(path.toRealPath());
   } catch (IOException e) {
       e.printStackTrace();
   }
@@ -83,7 +87,7 @@
 ## To Hash Code
 > returns this hash number: -1973821019
 ```java
-  test.hashCode()
+  path.hashCode()
 ```
 
 ## Print File Texts
@@ -92,13 +96,21 @@
 import java.nio.file.Files;
 import java.util.List;
 
-Path test = Paths.get("E:\\IntelliJ Projects\\Random\\src\\test.txt");
+Path path = Paths.get("E:\\IntelliJ Projects\\Random\\src\\test.txt");
   try {
-      List data = Files.readAllLines(test);
+      List data = Files.readAllLines(path);
       for (Object line : data) {
           System.out.println(line);
       }
   } catch (IOException e) {
       e.printStackTrace();
   }
+```
+
+## Writing a single line
+> overwrites the whole file content
+```java
+import java.nio.file.Files; // required
+  String content="Hey Coding Owls!!";
+  Files.write(path, content.getBytes());
 ```
