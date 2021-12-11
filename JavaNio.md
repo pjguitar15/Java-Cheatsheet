@@ -2,6 +2,49 @@
 * It is a newer version of Java IO (File)
 * NIO stands for Non-blocking IO
 
+## Print File Texts
+> using a for in loop
+```java
+import java.nio.file.Files;
+import java.util.List;
+
+Path path = Paths.get("E:\\IntelliJ Projects\\Random\\src\\test.txt");
+  try {
+      List data = Files.readAllLines(path);
+      for (Object line : data) {
+          System.out.println(line);
+      }
+  } catch (IOException e) {
+      e.printStackTrace();
+  }
+```
+
+## Writing a single line
+> overwrites the whole file content
+```java
+import java.nio.file.Files; // required
+  String content="Hey Coding Owls!!";
+  Files.write(path, content.getBytes());
+```
+
+## Writing multiple lines
+> overwrites the whole file content
+```java
+  List contentInList=new ArrayList<>();
+  contentInList.add("Twinkle, twinkle, little star");
+  contentInList.add("How I wonder what you are");
+  contentInList.add("Up above the world so high");
+  contentInList.add("Like a diamond in the sky");
+  contentInList.add("Twinkle, twinkle little star");
+  contentInList.add("How I wonder what you are");
+  
+  try {
+    Files.write(path, contentInList);
+  } catch (IOException e) {
+    e.printStackTrace();
+  }
+```
+
 ## Import Statement
 > needs these two to work
 ```java
@@ -88,47 +131,4 @@
 > returns this hash number: -1973821019
 ```java
   path.hashCode()
-```
-
-## Print File Texts
-> using a for in loop
-```java
-import java.nio.file.Files;
-import java.util.List;
-
-Path path = Paths.get("E:\\IntelliJ Projects\\Random\\src\\test.txt");
-  try {
-      List data = Files.readAllLines(path);
-      for (Object line : data) {
-          System.out.println(line);
-      }
-  } catch (IOException e) {
-      e.printStackTrace();
-  }
-```
-
-## Writing a single line
-> overwrites the whole file content
-```java
-import java.nio.file.Files; // required
-  String content="Hey Coding Owls!!";
-  Files.write(path, content.getBytes());
-```
-
-## Writing multiple lines
-> overwrites the whole file content
-```java
-  List contentInList=new ArrayList<>();
-  contentInList.add("Twinkle, twinkle, little star");
-  contentInList.add("How I wonder what you are");
-  contentInList.add("Up above the world so high");
-  contentInList.add("Like a diamond in the sky");
-  contentInList.add("Twinkle, twinkle little star");
-  contentInList.add("How I wonder what you are");
-  
-  try {
-    Files.write(path, contentInList);
-  } catch (IOException e) {
-    e.printStackTrace();
-  }
 ```
