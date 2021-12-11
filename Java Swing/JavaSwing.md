@@ -170,3 +170,16 @@ JLabel.setForeground(Color.white);
 
     frame.add(scrollPane);
 ```
+
+## JTable and JScrollPane
+> Makes Java Swing Look Good
+```java
+    UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+    SwingUtilities.invokeLater(new Runnable() {
+    @Override
+    public void run() {
+        TestFrame tf = new TestFrame();
+        tf.setVisible(true);
+    }
+    });
+```
