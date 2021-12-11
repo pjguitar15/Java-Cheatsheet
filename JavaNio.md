@@ -1,6 +1,6 @@
 ## Java NIO
-> It is a newer version of Java IO (File)
-> NIO stands for Non-blocking IO
+* It is a newer version of Java IO (File)
+* NIO stands for Non-blocking IO
 
 ## Import Statement
 > needs these two to work
