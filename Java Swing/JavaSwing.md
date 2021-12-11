@@ -188,8 +188,14 @@ JLabel.setForeground(Color.white);
 ```
 
 ## Bootstrap Buttons
-* Primary - #007BFF, #0069D9
-* Primary - #007BFF, #0069D9
+* Primary: #007BFF, #0069D9
+* Secondary: #6C757D, #5A6268(text-light)
+* Success: #28A745, #218838
+* Danger: #DC3545, #C82333(text-light)
+* Warning: #FFC107, #E0A800
+* Info: #17A2B8, #138496
+* Light: #F8F9FA, #E2E6EA
+* Dark: #343A40(text-light), #23272B(text-light)
 ```java        
         JButton primary = new JButton("Primary");
         primary.setPreferredSize(new Dimension(100, 28));
