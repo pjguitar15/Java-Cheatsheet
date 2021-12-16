@@ -187,6 +187,13 @@ JLabel.setForeground(Color.white);
     });
 ```
 
+
+## Remove Button Box on Text when clicked
+> Makes Java Swing Look Good
+```java
+    button.setFocusPainted(false);
+```
+
 ## Bootstrap Buttons
 * Primary: #007BFF, #0069D9
 * Secondary: #6C757D, #5A6268(text-light)
