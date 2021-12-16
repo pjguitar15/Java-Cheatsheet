@@ -43,7 +43,7 @@ import java.nio.file.Files; // required
 ## Writing multiple lines
 > overwrites the whole file content
 ```java
-  List contentInList=new ArrayList<>();
+  List<String> contentInList = new ArrayList<>();
   contentInList.add("Twinkle, twinkle, little star");
   contentInList.add("How I wonder what you are");
   contentInList.add("Up above the world so high");
@@ -115,32 +115,32 @@ import java.nio.file.Files; // required
 ## Get Parent
 > returns parent directories - E:\IntelliJ Projects\Random\src
 ```java
-  path.getParent()
+  path.getParent();
 ```
 
 ## Get Root
 > returns Disk letter - E:\
 ```java
-  path.getRoot()
+  path.getRoot();
 ```
 
 ## Get Class
 > returns class sun.nio.fs.WindowsPath
 ```java
-  path.getClass()
+  path.getClass();
 ```
 
 ## To Absolute Path and To File
 > returns the absolute path. both returns the same thing. 
 ```java
-  path.toAbsolutePath()
-  path.toFile()
+  path.toAbsolutePath();
+  path.toFile();
 ```
 
 ## To URI
 > returns a link (clickable): file:///E:/IntelliJ%20Projects/Random/src/test.txt
 ```java
-  path.toUri()
+  path.toUri();
 ```
 
 ## To Real Path
@@ -156,5 +156,5 @@ import java.nio.file.Files; // required
 ## To Hash Code
 > returns this hash number: -1973821019
 ```java
-  path.hashCode()
+  path.hashCode();
 ```
