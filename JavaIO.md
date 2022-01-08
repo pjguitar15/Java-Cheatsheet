@@ -3,6 +3,7 @@
 ```java
   BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter("directory here"));
   bufferedWriter.write("Hello World"); // writes file content
+  bufferedWriter.newLine(); // create new line
   bufferedWriter.close(); // write won't work without this
 ```
 ## BufferedReader
