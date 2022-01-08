@@ -74,14 +74,14 @@ import java.nio.file.Files; // required
 > need to indicate a path 
 ```java
   Path path = Paths.get("E:\\IntelliJ Projects\\Random\\New Folder");
-  Path p = Files.createDirectory(path);
+  Files.createDirectory(path);
 ```
 
 ## Create File
 > need to indicate a path 
 ```java
   Path path = Paths.get("E:\\IntelliJ Projects\\Random\\src\\data.txt");
-  Path p = Files.createFile(path);
+  Files.createFile(path);
 ```
 
 ## Get File Name
