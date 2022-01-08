@@ -15,3 +15,15 @@
   }
   bufferedReader.close();
 ```
+## Copy file content to another file
+> copy to another file
+```java
+  BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter("new directory here"));
+  BufferedReader bufferedReader = new BufferedReader(new FileReader("directory here"));
+  String str;
+  while ((str = bufferedReader.readLine()) != null) {
+      bufferedWriter.write(str + "\n");
+  }
+  bufferedReader.close();
+  bufferedWriter.close();
+```
