@@ -77,6 +77,18 @@ import java.nio.file.Files; // required
   Files.createDirectory(path);
 ```
 
+## Delete using IO
+> from a different package
+```java
+import java.io.*;
+        File filePath = new File("E:\\IntelliJ Projects\\Random\\src\\newTextFile.txt");
+        if (filePath.delete()) {
+            System.out.println("File is deleted");
+        } else {
+            System.out.println("File is not deleted");
+        }
+```
+
 ## Create File
 > need to indicate a path 
 ```java
