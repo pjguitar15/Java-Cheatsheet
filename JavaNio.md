@@ -78,7 +78,7 @@ import java.nio.file.Files; // required
 ```
 
 ## Delete using NIO
-> using nio
+> deleteIfExists() works too
 ```java
 import java.nio.file.*;
         Path filePath = Paths.get("E:\\IntelliJ Projects\\Random\\src\\test.txt");
