@@ -96,6 +96,17 @@ import java.nio.file.Files; // required
   path.getFileSystem()
 ```
 
+## Check Access
+> using checkAccess() method
+```java
+        try {
+            filePath.getFileSystem().provider().checkAccess(filePath, READ, EXECUTE);
+            System.out.println("The file can be read and executed");
+        } catch (Exception e) {
+            System.out.println("The file cannot be used.");
+        }
+```
+
 ## Get Name
 > returns directory names per level
 ```java
