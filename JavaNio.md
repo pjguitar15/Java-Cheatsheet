@@ -77,6 +77,19 @@ import java.nio.file.Files; // required
   Files.createDirectory(path);
 ```
 
+## Delete using NIO
+> from a different package
+```java
+import java.nio.file.*;
+        Path filePath = Paths.get("E:\\IntelliJ Projects\\Random\\src\\test.txt");
+        try {
+            Files.delete(filePath);
+            System.out.println("The file or directory is deleted");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+```
+
 ## Delete using IO
 > from a different package
 ```java
