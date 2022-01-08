@@ -77,6 +77,13 @@ import java.nio.file.Files; // required
   Files.createDirectory(path);
 ```
 
+## Create File
+> need to indicate a path 
+```java
+  Path path = Paths.get("E:\\IntelliJ Projects\\Random\\src\\data.txt");
+  Files.createFile(path);
+```
+
 ## Delete using NIO
 > deleteIfExists() works too
 ```java
@@ -90,6 +97,15 @@ import java.nio.file.*;
         }
 ```
 
+## BasicFileAttributes
+> allows taking file size, creation time, last modified time
+```java
+BasicFileAttributes fileAtt = Files.readAttributes(filePath, BasicFileAttributes.class);
+fileAtt.size();
+fileAtt.creationTime();
+fileAtt.lastModifiedTime();
+```
+
 ## Delete using IO
 > from a different package
 ```java
@@ -100,13 +116,6 @@ import java.io.*;
         } else {
             System.out.println("File is not deleted");
         }
-```
-
-## Create File
-> need to indicate a path 
-```java
-  Path path = Paths.get("E:\\IntelliJ Projects\\Random\\src\\data.txt");
-  Files.createFile(path);
 ```
 
 ## Get File Name
