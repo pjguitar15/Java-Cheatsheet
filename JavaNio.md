@@ -100,10 +100,17 @@ import java.nio.file.*;
 ## BasicFileAttributes
 > allows taking file size, creation time, last modified time
 ```java
+import java.nio.file.attribute.*;
+
 BasicFileAttributes fileAtt = Files.readAttributes(filePath, BasicFileAttributes.class);
 fileAtt.size();
 fileAtt.creationTime();
 fileAtt.lastModifiedTime();
+fileAtt.isRegularFile();
+fileAtt.isDirectory();
+fileAtt.lastAccessTime();
+fileAtt.isOther();
+fileAtt.isSymbolicLink();
 ```
 
 ## Delete using IO
