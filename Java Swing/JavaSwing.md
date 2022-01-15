@@ -173,7 +173,7 @@ JLabel.setForeground(Color.white);
 
 ## JTextArea and JScrollPane
 ```java
-JTextArea textArea = new JTextArea(8, 18);
+JTextArea textArea = new JTextArea(8, 18); // rows, columns
 JScrollPane scrollPane = new JScrollPane(textArea, ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS, JScrollPane.HORIZONTAL_SCROLLBAR_ALWAYS);
 add(scrollPane);
 ```
