@@ -155,6 +155,22 @@ JLabel.setForeground(Color.white);
     jc.getDate();
 ```
 
+## Combo Box
+```java
+        JComboBox<String> comboBox = new JComboBox<>();
+        comboBox.addItem("One");
+        comboBox.addItem("Two");
+        comboBox.addItem("Three");
+        comboBox.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if (comboBox.getSelectedItem().equals("One")) {
+                    System.out.println("One is selected!");
+                }
+            }
+        });
+```
+
 ## JTable and JScrollPane
 > only display table if layout is not null
 ```java
