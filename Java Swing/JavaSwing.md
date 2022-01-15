@@ -233,6 +233,38 @@ add(scrollPane);
     button.setFocusPainted(false);
 ```
 
+## Mouse Listener
+> All implemented methods
+```java
+        jbutton.addMouseListener(new MouseListener() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+
+            }
+
+            @Override
+            public void mousePressed(MouseEvent e) {
+
+            }
+
+            @Override
+            public void mouseReleased(MouseEvent e) {
+
+            }
+
+            @Override
+            public void mouseEntered(MouseEvent e) {
+
+            }
+
+            @Override
+            public void mouseExited(MouseEvent e) {
+
+            }
+        });
+```
+
+
 ## Bootstrap Buttons
 * Primary: #007BFF, #0069D9
 * Secondary: #6C757D, #5A6268(text-light)
