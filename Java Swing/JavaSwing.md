@@ -108,9 +108,25 @@ JTextField.setCursor(new Cursor(Cursor.TEXT_CURSOR)); // this works too
 
 ```java
 // Events > Key > keyPressed
-if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
-            System.out.println("Enter works");
-        }
+jbutton.addKeyListener(new KeyListener() {
+            @Override
+            public void keyTyped(KeyEvent e) {
+                
+            }
+
+            @Override
+            public void keyPressed(KeyEvent e) {
+                if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
+                    System.out.println("Enter works");
+                }
+            }
+
+            @Override
+            public void keyReleased(KeyEvent e) {
+
+            }
+        });
+
 ```
 
 ## Disable Window Maximize
