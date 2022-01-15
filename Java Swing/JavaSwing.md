@@ -224,6 +224,11 @@ mainBar.add(menu1);
 menu1.add(menuItem);
 ```
 
+## JCheckBox
+```java
+JCheckBox checkBox = new JCheckBox("This is a checkbox", false);
+```
+
 ## UIManager and SwingUtilities
 > Makes Java Swing Look Good
 ```java
