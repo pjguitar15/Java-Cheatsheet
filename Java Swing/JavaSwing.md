@@ -213,6 +213,17 @@ add(scrollPane);
     frame.add(scrollPane);
 ```
 
+## JMenu
+```java
+JMenuBar mainBar = new JMenuBar();
+JMenu menu1 = new JMenu("File");
+JMenuItem menuItem = new JMenuItem("menu item");
+
+setJMenuBar(mainBar);
+mainBar.add(menu1);
+menu1.add(menuItem);
+```
+
 ## UIManager and SwingUtilities
 > Makes Java Swing Look Good
 ```java
