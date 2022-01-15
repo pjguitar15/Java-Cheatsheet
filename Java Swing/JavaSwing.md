@@ -171,6 +171,13 @@ JLabel.setForeground(Color.white);
         });
 ```
 
+## JTextArea and JScrollPane
+```java
+JTextArea textArea = new JTextArea(8, 18);
+JScrollPane scrollPane = new JScrollPane(textArea, ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS, JScrollPane.HORIZONTAL_SCROLLBAR_ALWAYS);
+add(scrollPane);
+```
+
 ## JTable and JScrollPane
 > only display table if layout is not null
 ```java
