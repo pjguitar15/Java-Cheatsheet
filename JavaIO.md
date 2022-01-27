@@ -1,7 +1,8 @@
 ## BufferedWriter
 > writes files and content
 ```java
-  BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter("directory here")); // add true, to 2nd argument to allow appending of text
+  // add true to 2nd argument to allow appending of text
+  BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter("directory here")); 
   bufferedWriter.write("Hello World"); // writes file content
   bufferedWriter.newLine(); // create new line
   bufferedWriter.close(); // write won't work without this
