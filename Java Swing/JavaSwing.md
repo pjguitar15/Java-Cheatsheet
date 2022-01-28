@@ -4,6 +4,12 @@
     JPanel.setBorder(new EmptyBorder(10, 10, 10, 10)); // top, left, bottom, right   
 ```
 
+## Get out of current directory
+```java
+    // .. means to upper directory
+    String outOfDirectory = "..\\images\\profile.png"; 
+```
+
 ## Java Action Listener
 
 ```java
