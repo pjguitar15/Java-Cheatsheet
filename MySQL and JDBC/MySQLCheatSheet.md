@@ -8,19 +8,19 @@ SHOW DATABASES
 ## Create Database
 
 ```sql
-CREATE DATABASE acme;
+CREATE DATABASE dbname;
 ```
 
 ## Delete Database
 
 ```sql
-DROP DATABASE acme;
+DROP DATABASE dbname;
 ```
 
 ## Select Database
 
 ```sql
-USE acme;
+USE dbname;
 ```
 
 ## Create Table
